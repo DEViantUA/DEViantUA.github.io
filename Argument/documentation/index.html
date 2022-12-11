@@ -30,6 +30,14 @@
         
       
       
+  
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575L6.457 1.047zM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-.25-5.25a.75.75 0 0 0-1.5 0v2.5a.75.75 0 0 0 1.5 0v-2.5z"/></svg>');}</style>
+
 
     
     
@@ -107,6 +115,32 @@
       </div>
     </div>
     
+    
+      <div class="md-header__option">
+        <div class="md-select">
+          
+          <button class="md-header__button md-icon" aria-label="Select language">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+          </button>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              
+                <li class="md-select__item">
+                  <a href="/en/" hreflang="en" class="md-select__link">
+                    English
+                  </a>
+                </li>
+              
+                <li class="md-select__item">
+                  <a href="/ru/" hreflang="ru" class="md-select__link">
+                    Russian
+                  </a>
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
     
     
       <label class="md-header__button md-icon" for="__search">
@@ -312,7 +346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../Launch/async/" class="md-nav__link">
         Asynchronous version
       </a>
     </li>
@@ -326,7 +360,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../Launch/streaming/" class="md-nav__link">
         Streaming version
       </a>
     </li>
@@ -832,7 +866,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Functions/enc/" class="md-nav__link">
+      <a href="../../Functions/profile/" class="md-nav__link">
         profile
       </a>
     </li>
@@ -846,7 +880,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Functions/profile/" class="md-nav__link">
+      <a href="../../Functions/start/" class="md-nav__link">
         start
       </a>
     </li>
@@ -875,7 +909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Functions/profile/" class="md-nav__link">
+      <a href="../../Other/additionally/" class="md-nav__link">
         Additionally
       </a>
     </li>
@@ -1140,10 +1174,8 @@
 <h2 id="lang">lang</h2>
 <p>Takes one value to define the language. Supported languages are listed below in the documentation. The default is Russian.</p>
 <h3 id="example">Example:</h3>
-<pre><code class="language-python">
-EnkaGenshinGeneration(lang = &quot;en&quot;)
-
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">EnkaGenshinGeneration</span><span class="p">(</span><span class="n">lang</span> <span class="o">=</span> <span class="s2">&quot;en&quot;</span><span class="p">)</span>
+</code></pre></div>
 <h3 id="languages-supported">Languages Supported:</h3>
 <table>
 <thead>
@@ -1212,63 +1244,63 @@ EnkaGenshinGeneration(lang = &quot;en&quot;)
 - PIL.ImageFile: Image opened with Image.open()
 - list: Image link, the path to the file or PIL.ImageFile  (list only works with the argument: <code>randomImg</code>)</p>
 <h3 id="example_1">Example:</h3>
-<pre><code class="language-python">#Example str the path to the file:
-EnkaGenshinGeneration(img = &quot;img.png&quot;) 
-</code></pre>
-<pre><code class="language-python">#Example str image link:
-EnkaGenshinGeneration(img = &quot;https//...image.png&quot;) 
-</code></pre>
-<pre><code class="language-python">#Example PIL.ImageFile:
-EnkaGenshinGeneration(img = Image.open(&quot;img.png&quot;))
-</code></pre>
-<pre><code class="language-python">#Example list:
-EnkaGenshinGeneration(img = [Image.open(&quot;img.png&quot;), &quot;img.png&quot;, &quot;https//...image.png&quot;]) 
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">#Example str the path to the file:</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">EnkaGenshinGeneration</span><span class="p">(</span><span class="n">img</span> <span class="o">=</span> <span class="s2">&quot;img.png&quot;</span><span class="p">)</span> 
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">#Example str image link:</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">EnkaGenshinGeneration</span><span class="p">(</span><span class="n">img</span> <span class="o">=</span> <span class="s2">&quot;https//...image.png&quot;</span><span class="p">)</span> 
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">#Example PIL.ImageFile:</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">EnkaGenshinGeneration</span><span class="p">(</span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;img.png&quot;</span><span class="p">))</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">#Example list:</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">EnkaGenshinGeneration</span><span class="p">(</span><span class="n">img</span> <span class="o">=</span> <span class="p">[</span><span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;img.png&quot;</span><span class="p">),</span> <span class="s2">&quot;img.png&quot;</span><span class="p">,</span> <span class="s2">&quot;https//...image.png&quot;</span><span class="p">])</span> 
+</code></pre></div>
 <h2 id="charterimg">charterImg:</h2>
 <p>This argument can give each character card its own image.</p>
 <p>Takes the value: <code>dict</code> (Can take all values from the img argument except list.)</p>
 <h3 id="example_2">Example:</h3>
-<pre><code class="language-python">EnkaGenshinGeneration(charterImg = {&quot;Klee&quot;: Image.open(&quot;img.png&quot;), &quot;Albedo&quot;: &quot;img.png&quot;, &quot;Xiao&quot;: &quot;https//...image.png&quot;})
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">EnkaGenshinGeneration</span><span class="p">(</span><span class="n">charterImg</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Klee&quot;</span><span class="p">:</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;img.png&quot;</span><span class="p">),</span> <span class="s2">&quot;Albedo&quot;</span><span class="p">:</span> <span class="s2">&quot;img.png&quot;</span><span class="p">,</span> <span class="s2">&quot;Xiao&quot;</span><span class="p">:</span> <span class="s2">&quot;https//...image.png&quot;</span><span class="p">})</span>
+</code></pre></div>
 <h2 id="randomimg">randomImg:</h2>
 <p>Randomly select images from list of <code>img</code> argument.</p>
 <h3 id="example_3">Example:</h3>
-<pre><code class="language-python">EnkaGenshinGeneration(img = [Image.open(&quot;img.png&quot;), &quot;img.png&quot;], randomImg = True) #If img is not a list, then randomImg is ignored.
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">EnkaGenshinGeneration</span><span class="p">(</span><span class="n">img</span> <span class="o">=</span> <span class="p">[</span><span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;img.png&quot;</span><span class="p">),</span> <span class="s2">&quot;img.png&quot;</span><span class="p">],</span> <span class="n">randomImg</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="c1">#If img is not a list, then randomImg is ignored.</span>
+</code></pre></div>
 <h2 id="adapt">adapt:</h2>
 <p>Adapt the background to the custom image passed in the <code>img</code> argument.</p>
 <h3 id="example_4">Example:</h3>
-<pre><code class="language-python">EnkaGenshinGeneration(img = &quot;img.png&quot;, adapt = True)
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">EnkaGenshinGeneration</span><span class="p">(</span><span class="n">img</span> <span class="o">=</span> <span class="s2">&quot;img.png&quot;</span><span class="p">,</span> <span class="n">adapt</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
 <h2 id="splash">splash:</h2>
 <p>If the character is wearing a costume, then their splashes will be available in costumes.</p>
 <h3 id="example_5">Example:</h3>
-<pre><code class="language-python">EnkaGenshinGeneration(splash= True)
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">EnkaGenshinGeneration</span><span class="p">(</span><span class="n">splash</span><span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
 <h2 id="namecard">namecard:</h2>
 <p>Replaces the background of the player card image with character images. (Used only for the second template.)</p>
 <h3 id="example_6">Example:</h3>
-<pre><code class="language-python">EnkaGenshinGeneration(namecard = True)
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">EnkaGenshinGeneration</span><span class="p">(</span><span class="n">namecard</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
 <h2 id="dowload">dowload:</h2>
 <p>Will return ready images for further work with them. (If not specified, then the finished results will be saved in the directory of the executable file in the folder <code>EnkaImg</code> and return None: )</p>
 <h3 id="example_7">Example:</h3>
-<pre><code class="language-python">EnkaGenshinGeneration(dowload = True)
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">EnkaGenshinGeneration</span><span class="p">(</span><span class="n">dowload</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
 <h2 id="name">name:</h2>
 <p>Generates only cards of the specified characters.</p>
 <h3 id="example_8">Example:</h3>
-<pre><code class="language-python">#Example str one character:
-EnkaGenshinGeneration(name = &quot;Klee&quot;)
-</code></pre>
-<pre><code class="language-python">#Example str two or more characters:
-EnkaGenshinGeneration.start(uids = &quot;757562748&quot;, name = &quot;Klee, Albedo, ...&quot;)
-</code></pre>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1">#Example str one character:</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">EnkaGenshinGeneration</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Klee&quot;</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1">#Example str two or more characters:</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="n">EnkaGenshinGeneration</span><span class="o">.</span><span class="n">start</span><span class="p">(</span><span class="n">uids</span> <span class="o">=</span> <span class="s2">&quot;757562748&quot;</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Klee, Albedo, ...&quot;</span><span class="p">)</span>
+</code></pre></div></p>
 <h2 id="hide">hide:</h2>
 <p>Should the player's UID be displayed?</p>
 <h3 id="example_9">Example:</h3>
-<pre><code class="language-python">EnkaGenshinGeneration(hide = False)
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">EnkaGenshinGeneration</span><span class="p">(</span><span class="n">hide</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+</code></pre></div>
 
 
 
@@ -1326,7 +1358,7 @@ EnkaGenshinGeneration.start(uids = &quot;757562748&quot;, name = &quot;Klee, Alb
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2014 <a href="https://twitter.com/_tomchristie">Tom Christie</a>.
+      Copyright &copy; 2022 <a href="https://github.com/DEViantUA">DEViantUA</a>.
     </div>
   
   
