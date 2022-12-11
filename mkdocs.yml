@@ -1,0 +1,49 @@
+site_name: EnkaNetworkCard
+repo_url: https://github.com/DEViantUA/EnkaNetworkCard
+site_description: Documentation for EnkaNetworkCard
+
+
+theme:
+  features:
+    - navigation.tracking
+  icon:
+    repo: fontawesome/brands/github
+  name: material
+  logo: logo.png
+  palette:
+    scheme: slate
+    primary: pink
+    accent: lime
+  language: en
+  
+nav:
+    - Information: index.md
+    - Installation:
+        - Asynchronous version: file:///C:/Users/DarsoX/Desktop/doc/site/Installation_Asynchronous_version/index.html
+        - Streaming version: file:///C:/Users/DarsoX/Desktop/doc/site/Installation_Streaming_version/index.html
+    - Launch:
+        - Asynchronous version: indesx.md
+        - Streaming version: index.md
+    - Class EnkaGenshinGeneration:
+        - Argument:
+          - lang: file:///C:/Users/DarsoX/Desktop/doc/site/Argument/documentation/index.html#lang
+          - img: file:///C:/Users/DarsoX/Desktop/doc/site/Argument/documentation/index.html#img
+          - charterImg: file:///C:/Users/DarsoX/Desktop/doc/site/Argument/documentation/index.html#charterimg
+          - randomImg: file:///C:/Users/DarsoX/Desktop/doc/site/Argument/documentation/index.html#randomimg
+          - adapt: file:///C:/Users/DarsoX/Desktop/doc/site/Argument/documentation/index.html#adapt
+          - splash: file:///C:/Users/DarsoX/Desktop/doc/site/Argument/documentation/index.html#splash
+          - namecard: file:///C:/Users/DarsoX/Desktop/doc/site/Argument/documentation/index.html#namecard
+          - dowload: file:///C:/Users/DarsoX/Desktop/doc/site/Argument/documentation/index.html#dowload
+          - name: file:///C:/Users/DarsoX/Desktop/doc/site/Argument/documentation/index.html#name
+          - hide: file:///C:/Users/DarsoX/Desktop/doc/site/Argument/documentation/index.html#hide
+        - Functions:
+          - enc: file:///C:/Users/DarsoX/Desktop/doc/site/Functions/enc/index.html
+          - profile: file:///C:/Users/DarsoX/Desktop/doc/site/Functions/profile/index.html
+          - start: file:///C:/Users/DarsoX/Desktop/doc/site/Argument/documentation/index.html
+    - Additionally: file:///C:/Users/DarsoX/Desktop/doc/site/Argument/documentation/index.html
+
+plugins:
+  - search:
+      lang:
+        - ru
+        - en
