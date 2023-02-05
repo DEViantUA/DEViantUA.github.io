@@ -860,7 +860,7 @@
 <h2 id="start">Start:</h2>
 <p>It takes <code>enc</code> and <code>template</code> argument.</p>
 <p><code>enc</code> - The result returned by the <code>EnkaGenshinGeneration().enc()</code> function
-<code>template</code> - Choosing a template to create a character card. There are 3 in total.
+<code>template</code> - Choosing a template to create a character card. There are 4 in total.
 (Template examples can be found here: <a href="/Other/additionally.md">template</a>)</p>
 <h3 id="thread-example">Thread example:</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">enkanetworkcard</span> <span class="kn">import</span> <span class="n">encbanner</span>
@@ -868,7 +868,8 @@
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">ENC</span> <span class="o">=</span> <span class="n">encbanner</span><span class="o">.</span><span class="n">EnkaGenshinGeneration</span><span class="p">()</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">encR</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">client</span><span class="o">.</span><span class="n">enc</span><span class="p">(</span><span class="n">uids</span> <span class="o">=</span> <span class="s2">&quot;811455610&quot;</span><span class="p">))</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">resultProfile</span> <span class="o">=</span> <span class="n">ENC</span><span class="o">.</span><span class="n">start</span><span class="p">(</span><span class="n">enc</span> <span class="o">=</span> <span class="n">encR</span><span class="p">,</span> <span class="n">teample</span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">resultProfile</span> <span class="o">=</span> <span class="n">ENC</span><span class="o">.</span><span class="n">start</span><span class="p">(</span><span class="n">enc</span> <span class="o">=</span> <span class="n">encR</span><span class="p">,</span> <span class="n">
+</span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span>
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">resultProfile</span><span class="p">)</span>
 </code></pre></div>
 <h3 id="async-example">Async example:</h3>
