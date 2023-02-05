@@ -15,7 +15,7 @@
     
     
       
-        <title>hide - EnkaNetworkCard</title>
+        <title>miniInfo - EnkaNetworkCard</title>
       
     
     
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              hide
+              miniInfo
             
           </span>
         </div>
@@ -494,6 +494,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="./" class="md-nav__link">
+        hide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -506,12 +520,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          hide
+          miniInfo
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        hide
+        miniInfo
       </a>
       
         
@@ -726,6 +740,26 @@
         
           <li class="md-nav__item">
   <a href="#example_9" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#miniinfo" class="md-nav__link">
+    miniInfo:
+  </a>
+  
+    <nav class="md-nav" aria-label="miniInfo:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_10" class="md-nav__link">
     Example:
   </a>
   
@@ -1135,6 +1169,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#miniinfo" class="md-nav__link">
+    miniInfo:
+  </a>
+  
+    <nav class="md-nav" aria-label="miniInfo:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_10" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1231,61 +1285,66 @@
 - list: Image link, the path to the file or PIL.ImageFile  (list only works with the argument: <code>randomImg</code>)</p>
 <h3 id="example_1">Example:</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">#Example str the path to the file:</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">EnkaGenshinGeneration</span><span class="p">(</span><span class="n">img</span> <span class="o">=</span> <span class="s2">&quot;img.png&quot;</span><span class="p">)</span> 
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">ENC</span><span class="p">(</span><span class="n">img</span> <span class="o">=</span> <span class="s2">&quot;img.png&quot;</span><span class="p">)</span> 
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">#Example str image link:</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">EnkaGenshinGeneration</span><span class="p">(</span><span class="n">img</span> <span class="o">=</span> <span class="s2">&quot;https//...image.png&quot;</span><span class="p">)</span> 
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">ENC</span><span class="p">(</span><span class="n">img</span> <span class="o">=</span> <span class="s2">&quot;https//...image.png&quot;</span><span class="p">)</span> 
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">#Example PIL.ImageFile:</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">EnkaGenshinGeneration</span><span class="p">(</span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;img.png&quot;</span><span class="p">))</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">ENC</span><span class="p">(</span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;img.png&quot;</span><span class="p">))</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">#Example list:</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">EnkaGenshinGeneration</span><span class="p">(</span><span class="n">img</span> <span class="o">=</span> <span class="p">[</span><span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;img.png&quot;</span><span class="p">),</span> <span class="s2">&quot;img.png&quot;</span><span class="p">,</span> <span class="s2">&quot;https//...image.png&quot;</span><span class="p">])</span> 
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">ENC</span><span class="p">(</span><span class="n">img</span> <span class="o">=</span> <span class="p">[</span><span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;img.png&quot;</span><span class="p">),</span> <span class="s2">&quot;img.png&quot;</span><span class="p">,</span> <span class="s2">&quot;https//...image.png&quot;</span><span class="p">])</span> 
 </code></pre></div>
 <h2 id="characterimgs">characterImgs:</h2>
 <p>This argument can give each character card its own image.</p>
 <p>Takes the value: <code>dict</code> (Can take all values from the img argument except list.)</p>
 <h3 id="example_2">Example:</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">EnkaGenshinGeneration</span><span class="p">(</span><span class="n">characterImgs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Klee&quot;</span><span class="p">:</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;img.png&quot;</span><span class="p">),</span> <span class="s2">&quot;Albedo&quot;</span><span class="p">:</span> <span class="s2">&quot;img.png&quot;</span><span class="p">,</span> <span class="s2">&quot;Xiao&quot;</span><span class="p">:</span> <span class="s2">&quot;https//...image.png&quot;</span><span class="p">})</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">ENC</span><span class="p">(</span><span class="n">characterImgs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Klee&quot;</span><span class="p">:</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;img.png&quot;</span><span class="p">),</span> <span class="s2">&quot;Albedo&quot;</span><span class="p">:</span> <span class="s2">&quot;img.png&quot;</span><span class="p">,</span> <span class="s2">&quot;Xiao&quot;</span><span class="p">:</span> <span class="s2">&quot;https//...image.png&quot;</span><span class="p">})</span>
 </code></pre></div>
 <h2 id="randomimg">randomImg:</h2>
 <p>Randomly select images from list of <code>img</code> argument.</p>
 <h3 id="example_3">Example:</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">EnkaGenshinGeneration</span><span class="p">(</span><span class="n">img</span> <span class="o">=</span> <span class="p">[</span><span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;img.png&quot;</span><span class="p">),</span> <span class="s2">&quot;img.png&quot;</span><span class="p">],</span> <span class="n">randomImg</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="c1">#If img is not a list, then randomImg is ignored.</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">ENC</span><span class="p">(</span><span class="n">img</span> <span class="o">=</span> <span class="p">[</span><span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;img.png&quot;</span><span class="p">),</span> <span class="s2">&quot;img.png&quot;</span><span class="p">],</span> <span class="n">randomImg</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="c1">#If img is not a list, then randomImg is ignored.</span>
 </code></pre></div>
 <h2 id="adapt">adapt:</h2>
 <p>Adapt the background to the custom image passed in the <code>img</code> argument.</p>
 <h3 id="example_4">Example:</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">EnkaGenshinGeneration</span><span class="p">(</span><span class="n">img</span> <span class="o">=</span> <span class="s2">&quot;img.png&quot;</span><span class="p">,</span> <span class="n">adapt</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">ENC</span><span class="p">(</span><span class="n">img</span> <span class="o">=</span> <span class="s2">&quot;img.png&quot;</span><span class="p">,</span> <span class="n">adapt</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
 </code></pre></div>
 <h2 id="splashart">splashArt:</h2>
 <p>If the character is wearing a costume, then their splashes will be available in costumes.</p>
 <h3 id="example_5">Example:</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">EnkaGenshinGeneration</span><span class="p">(</span><span class="n">splashArt</span><span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">ENC</span><span class="p">(</span><span class="n">splashArt</span><span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
 </code></pre></div>
 <h2 id="namecards">nameCards:</h2>
 <p>Replaces the background of the player card image with character images. (Used only for the second template.)</p>
 <h3 id="example_6">Example:</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">EnkaGenshinGeneration</span><span class="p">(</span><span class="n">nameCards</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">ENC</span><span class="p">(</span><span class="n">nameCards</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
 </code></pre></div>
 <h2 id="save">save:</h2>
 <p>If specified, it will save the finished results to the <code>AioEnkaImg</code> directory</p>
 <h3 id="example_7">Example:</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">EnkaGenshinGeneration</span><span class="p">(</span><span class="n">save</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">ENC</span><span class="p">(</span><span class="n">save</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
 </code></pre></div>
 <h2 id="charactername">characterName:</h2>
 <p>Generates only cards of the specified characters.</p>
 <h3 id="example_8">Example:</h3>
 <p><div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1">#Example str one character:</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">EnkaGenshinGeneration</span><span class="p">(</span><span class="n">characterName</span> <span class="o">=</span> <span class="s2">&quot;Klee&quot;</span><span class="p">)</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">ENC</span><span class="p">(</span><span class="n">characterName</span> <span class="o">=</span> <span class="s2">&quot;Klee&quot;</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1">#Example str two or more characters:</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="n">EnkaGenshinGeneration</span><span class="o">.</span><span class="n">start</span><span class="p">(</span><span class="n">uids</span> <span class="o">=</span> <span class="s2">&quot;757562748&quot;</span><span class="p">,</span> <span class="n">characterName</span> <span class="o">=</span> <span class="s2">&quot;Klee, Albedo, ...&quot;</span><span class="p">)</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="n">ENC</span><span class="o">.</span><span class="n">start</span><span class="p">(</span><span class="n">uids</span> <span class="o">=</span> <span class="s2">&quot;757562748&quot;</span><span class="p">,</span> <span class="n">characterName</span> <span class="o">=</span> <span class="s2">&quot;Klee, Albedo, ...&quot;</span><span class="p">)</span>
 </code></pre></div></p>
 <h2 id="hide">hide:</h2>
 <p>Should the player's UID be displayed?</p>
 <h3 id="example_9">Example:</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">EnkaGenshinGeneration</span><span class="p">(</span><span class="n">hide</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">ENC</span><span class="p">(</span><span class="n">hide</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="miniinfo">miniInfo:</h2>
+<p>Generate 4 template with minimum information or complete?</p>
+<h3 id="example_10">Example:</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">ENC</span><span class="p">(</span><span class="n">miniInfo</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
 </code></pre></div>
 
 
@@ -1307,7 +1366,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="./" class="md-footer__link md-footer__link--prev" aria-label="Previous: characterName" rel="prev">
+        <a href="./" class="md-footer__link md-footer__link--prev" aria-label="Previous: hide" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1316,7 +1375,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              characterName
+              hide
             </div>
           </div>
         </a>
